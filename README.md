@@ -1,5 +1,5 @@
 # CaseLink
-Code for extension paper of CaseGNN.
+Code for CaseLink paper (SIGIR 2024).
 
 Title: [CaseLink: Inductive Graph Learning for Legal Case Retrieval](https://arxiv.org/abs/2403.17780)
 
@@ -17,7 +17,7 @@ The label file `task1_train_labels_2022.json` and `task1_test_labels_2022.json` 
 
 COLIEE2023 folders should be set in a similar way. 
 
-The final project file are as follows:
+The final project files are as follows:
 
     ```
     $ ./CaseGNN/
@@ -67,12 +67,12 @@ The final project file are as follows:
   - The BM25 ranking matrix can be also downloaded [here](https://drive.google.com/drive/folders/1R4ggI9Tq-dES-gtLsE_s1odP7yWuW5n4?usp=drive_link).
 
 
-## 1. CaseGNN case embedding generation
+## 2. CaseGNN case embedding generation
   - To generate the CaseGNN case embeddings, please run the CaseGNN2022_run.sh and CaseGNN2023_run.sh in [CaseGNN github](https://github.com/yanran-tang/CaseGNN)
 
   - The CaseGNN case embedding can be also downloaded [here](https://drive.google.com/drive/folders/15-l-BJn9X5xpeaHDyk8VE0ncTPR6qaXS?usp=drive_link).
 
-# CaseLink Graph Constrction
+# CaseLink Graph Construction
 - CaseLink graph constrction utilises the result of bm25 ranking result and case embedding from CaseGNN, please ensure the folders of  `./Graph_generation/bm25/bm25_matrix/` and `./Graph_generation/casegnn_embedding/` have been generated or downloaded.
 - Run `. ./Graph.sh`
   - `--topk_neighbor` can be chosen from {3, 5, 10, 20}. 
@@ -86,7 +86,7 @@ The final project file are as follows:
 
 # Model Training
 ## 1. CaseGNN Model Training
-Run `. ./CaseLink_2022.sh` and `. ./CaseLink_2023.sh` for COLIEE2022 and COLIEE2023, respectively.
+Run `. ./CaseLink2022_run.sh` and `. ./CaseLink2023_run.sh` for COLIEE2022 and COLIEE2023, respectively.
 
 # Cite
 If you find this repo useful, please cite
