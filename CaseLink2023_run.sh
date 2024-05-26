@@ -1,0 +1,1 @@
+python main.py --in_dim=1536 --h_dim=1536 --out_dim=1536 --dropout=0.3 --epoch=100 --lr=1e-4 --wd=1e-4 --batch_size=128 --temp=0.1 --hard_neg_num=10 --num_heads=1 --ran_neg_num=1 --layer_num=2 --topk_neighbor=5 --charge_threshold=0.9 --lamb=0.001 --data=2023
