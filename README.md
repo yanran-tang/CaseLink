@@ -20,7 +20,7 @@ COLIEE2023 folders should be set in a similar way.
 The final project files are as follows:
 
     ```
-    $ ./CaseGNN/
+    $ ./CaseLink/
     .
     ├── DATASET
     │   └── data_load.py
